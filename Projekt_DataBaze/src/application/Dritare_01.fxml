@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Kontroll1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="520.0" stroke="BLACK" strokeType="INSIDE" width="774.0">
+         <fill>
+            <RadialGradient centerX="0.5353981963301127" centerY="0.821969696969697" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9700000286102295" green="0.2796546220779419" blue="0.048500001430511475" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9473684430122375" green="0.4842105209827423" blue="0.4842105209827423" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="430.0" fitWidth="827.0" layoutX="-53.0" layoutY="121.0" opacity="0.78">
+         <image>
+            <Image url="@../../../../Desktop/how-do-diesel-electric-trains-work-and-why-do-they-need-turbochargers-2880x1920-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#212326" height="396.0" layoutX="58.0" layoutY="84.0" opacity="0.77" stroke="BLACK" strokeType="INSIDE" width="675.0" />
+      <ImageView fitHeight="131.0" fitWidth="217.0" layoutX="473.0" layoutY="207.0">
+         <image>
+            <Image url="@../../../../Desktop/360_F_227450952_KQCMShHPOPebUXklULsKsROk5AvN6H1H-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="325.0" layoutY="108.0" text="Home Page" textFill="#f40000">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="user" layoutX="171.0" layoutY="351.0" mnemonicParsing="false" text="User" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.33" specularConstant="0.0">
+               <bumpInput>
+                  <ColorAdjust brightness="-0.56" contrast="1.0" hue="0.54" saturation="0.89" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="19.82">
+                     <color>
+                        <Color red="1.0" green="0.019607843831181526" blue="0.019607843831181526" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </RadioButton>
+      <Button fx:id="enter" layoutX="374.0" layoutY="391.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="77.0" text="Enter">
+         <effect>
+            <Lighting diffuseConstant="1.33" specularConstant="0.0">
+               <bumpInput>
+                  <ColorAdjust brightness="-0.56" contrast="1.0" hue="0.54" saturation="0.89" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="19.82">
+                     <color>
+                        <Color red="1.0" green="0.019607843831181526" blue="0.019607843831181526" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <RadioButton fx:id="admin" layoutX="543.0" layoutY="359.0" mnemonicParsing="false" text="Admin" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.33" specularConstant="0.0">
+               <bumpInput>
+                  <ColorAdjust brightness="-0.56" contrast="1.0" hue="0.54" saturation="0.89" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="19.82">
+                     <color>
+                        <Color red="1.0" green="0.019607843831181526" blue="0.019607843831181526" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </RadioButton>
+      <Label layoutX="21.0" layoutY="21.0" text="============Railway Application===========" textFill="#f40000">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="exit" layoutX="374.0" layoutY="430.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="77.0" text="Exit">
+         <effect>
+            <Lighting diffuseConstant="1.33" specularConstant="0.0">
+               <bumpInput>
+                  <ColorAdjust brightness="-0.56" contrast="1.0" hue="0.54" saturation="0.89" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="19.82">
+                     <color>
+                        <Color red="1.0" green="0.019607843831181526" blue="0.019607843831181526" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <ImageView fitHeight="141.0" fitWidth="153.0" layoutX="143.0" layoutY="190.0" opacity="0.78">
+         <image>
+            <Image url="@../../../../Desktop/14797767.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

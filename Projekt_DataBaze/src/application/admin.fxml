@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="1394.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.KontrollAdmin">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="593.0" stroke="BLACK" strokeType="INSIDE" width="1394.0">
+         <fill>
+            <RadialGradient centerX="0.5353981963301127" centerY="0.821969696969697" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9700000286102295" green="0.2796546220779419" blue="0.048500001430511475" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9473684430122375" green="0.4842105209827423" blue="0.4842105209827423" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutY="14.0" prefHeight="43.0" prefWidth="1394.0" text="============================= Admin==================================" textFill="#f40000">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblTreni" layoutX="143.0" layoutY="117.0" prefHeight="226.0" prefWidth="944.0">
+         <columns>
+            <TableColumn fx:id="columnNR" text="Nr. i trenit" />
+            <TableColumn fx:id="columnEmriTreni" prefWidth="128.80003356933594" text="Emri i trenit" />
+            <TableColumn fx:id="columnNisja" prefWidth="105.5999755859375" text="Nisja" />
+            <TableColumn fx:id="columnMberritja" prefWidth="99.2000732421875" text="Mberritja" />
+            <TableColumn fx:id="columnData" prefWidth="128.0" text="Data" />
+            <TableColumn fx:id="columnOra" prefWidth="110.4000244140625" text="Ora" />
+            <TableColumn fx:id="columnBileta" prefWidth="144.7999267578125" text="Cmimi i biletes" />
+            <TableColumn fx:id="columnKapaciteti" prefWidth="144.7999267578125" text="Kapaciteti" />
+         </columns>
+      </TableView>
+      <ComboBox fx:id="ComboNisja" layoutX="353.0" layoutY="403.0" prefWidth="150.0" />
+      <ComboBox fx:id="ComboMberritja" layoutX="529.0" layoutY="403.0" prefWidth="150.0" />
+      <DatePicker fx:id="DataZgjedhje" layoutX="708.0" layoutY="403.0" />
+      <TextField fx:id="txtNr" layoutX="14.0" layoutY="403.0" />
+      <TextField fx:id="txtCmimi" layoutX="1082.0" layoutY="402.0" prefHeight="26.0" prefWidth="143.0" />
+      <ComboBox fx:id="ComboEmriTreni" layoutX="185.0" layoutY="403.0" prefWidth="150.0" />
+      <Label layoutX="29.0" layoutY="359.0" prefHeight="43.0" prefWidth="118.0" text="Nr. i trenit" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="193.0" layoutY="359.0" prefHeight="43.0" prefWidth="134.0" text="Emri i trenti" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="398.0" layoutY="359.0" prefHeight="43.0" prefWidth="60.0" text="Nisja" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="552.0" layoutY="359.0" prefHeight="43.0" prefWidth="103.0" text="Mberritja" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="766.0" layoutY="359.0" prefHeight="43.0" prefWidth="60.0" text="Data" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="1071.0" layoutY="359.0" prefHeight="43.0" prefWidth="165.0" text="Cmimi i biletes" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="add" layoutX="335.0" layoutY="466.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="77.0" text="Shto">
+         <effect>
+            <Lighting diffuseConstant="1.33" specularConstant="0.0">
+               <bumpInput>
+                  <ColorAdjust brightness="-0.56" contrast="1.0" hue="0.54" saturation="0.89" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="19.82">
+                     <color>
+                        <Color red="1.0" green="0.019607843831181526" blue="0.019607843831181526" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="update" layoutX="490.0" layoutY="466.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="77.0" text="Perditeso">
+         <effect>
+            <Lighting diffuseConstant="1.33" specularConstant="0.0">
+               <bumpInput>
+                  <ColorAdjust brightness="-0.56" contrast="1.0" hue="0.54" saturation="0.89" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="19.82">
+                     <color>
+                        <Color red="1.0" green="0.019607843831181526" blue="0.019607843831181526" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="remove" layoutX="645.0" layoutY="466.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="88.0" text="Fshij">
+         <effect>
+            <Lighting diffuseConstant="1.33" specularConstant="0.0">
+               <bumpInput>
+                  <ColorAdjust brightness="-0.56" contrast="1.0" hue="0.54" saturation="0.89" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="19.82">
+                     <color>
+                        <Color red="1.0" green="0.019607843831181526" blue="0.019607843831181526" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="clear" layoutX="805.0" layoutY="466.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="77.0" text="Pastro">
+         <effect>
+            <Lighting diffuseConstant="1.33" specularConstant="0.0">
+               <bumpInput>
+                  <ColorAdjust brightness="-0.56" contrast="1.0" hue="0.54" saturation="0.89" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="19.82">
+                     <color>
+                        <Color red="1.0" green="0.019607843831181526" blue="0.019607843831181526" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="kthehuHomePage" layoutX="1233.0" layoutY="544.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Kthehu ne Home Page">
+         <effect>
+            <Lighting diffuseConstant="1.33" specularConstant="0.0">
+               <bumpInput>
+                  <ColorAdjust brightness="-0.56" contrast="1.0" hue="0.54" saturation="0.89" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="19.82">
+                     <color>
+                        <Color red="1.0" green="0.019607843831181526" blue="0.019607843831181526" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <TextField fx:id="txtOra" layoutX="904.0" layoutY="402.0" prefHeight="26.0" prefWidth="166.0" />
+      <Label layoutX="963.0" layoutY="359.0" prefHeight="43.0" prefWidth="48.0" text="Ora" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="603.0" layoutY="73.0" prefHeight="43.0" prefWidth="103.0" text="Trenat" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtKapaciteti" layoutX="1237.0" layoutY="402.0" prefHeight="26.0" prefWidth="143.0" />
+      <Label layoutX="1249.0" layoutY="359.0" prefHeight="43.0" prefWidth="118.0" text="Kapaciteti" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

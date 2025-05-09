@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="561.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.kontrollLogIn">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="463.0" stroke="BLACK" strokeType="INSIDE" width="561.0">
+         <fill>
+            <RadialGradient centerX="0.5353981963301127" centerY="0.821969696969697" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9700000286102295" green="0.2796546220779419" blue="0.048500001430511475" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9473684430122375" green="0.4842105209827423" blue="0.4842105209827423" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="244.0" fitWidth="647.0" layoutX="-100.0" layoutY="177.0" opacity="0.78">
+         <image>
+            <Image url="@../../../../Desktop/how-do-diesel-electric-trains-work-and-why-do-they-need-turbochargers-2880x1920-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#212326" height="368.0" layoutX="128.0" layoutY="67.0" opacity="0.77" stroke="BLACK" strokeType="INSIDE" width="337.0" />
+      <Label layoutX="-1.0" layoutY="14.0" prefHeight="43.0" prefWidth="576.0" text="========Railway Application======" textFill="#f40000">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="80.0" fitWidth="124.0" layoutX="234.0" layoutY="78.0">
+         <image>
+            <Image url="@../../../../Desktop/360_F_227450952_KQCMShHPOPebUXklULsKsROk5AvN6H1H-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="258.0" layoutY="158.0" text="Log In" textFill="#f40000">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtname" layoutX="221.0" layoutY="225.0" promptText="Username" />
+      <PasswordField fx:id="txtpassword" layoutX="221.0" layoutY="286.0" promptText="Password" />
+      <Button fx:id="enter" layoutX="257.0" layoutY="343.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="77.0" text="Log In">
+         <effect>
+            <Lighting diffuseConstant="1.33" specularConstant="0.0">
+               <bumpInput>
+                  <ColorAdjust brightness="-0.56" contrast="1.0" hue="0.54" saturation="0.89" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="19.82">
+                     <color>
+                        <Color red="1.0" green="0.019607843831181526" blue="0.019607843831181526" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="back" layoutX="224.0" layoutY="386.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="142.0" text="Kthehu ne Home Page">
+         <effect>
+            <Lighting diffuseConstant="1.33" specularConstant="0.0">
+               <bumpInput>
+                  <ColorAdjust brightness="-0.56" contrast="1.0" hue="0.54" saturation="0.89" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="19.82">
+                     <color>
+                        <Color red="1.0" green="0.019607843831181526" blue="0.019607843831181526" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
