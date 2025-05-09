@@ -105,35 +105,3 @@ public class Main extends Application { ////Main trashogohet (klasa femije) nga 
     }                 //e aplikacionit duke thirrur metoden start()
 }
 
-//--> metoda load() e klases javafx.application.Application,perdoret per te ngarkuar te dhena ose per te inicializuar komponentet e UI (si skedare fxml, elemente vizuale, etj.)
-
-//-->metoda getClass() e klases Object(dhe perdoret nga çdo klase ne JavaFX,pasi eshte nje metode e trasheguar nga klasa baze Object)
-//Funksioni:Kthen objektin e tipit Class qe perfaqeson klasen e objektit aktual,perdoret per te marre informacion mbi tipin e klases ne kohen e ekzekutimit
-
-//-->metoda getResource() e klasat ClassLoader ne JavaFX.Funksioni:perdoret per te ngarkuar burime (si skedare fxml, imazhe, dhe burime te tjera) nga nje rruge ne klasen ose paketen e aplikacionit
-
-//-->metoda launch() e klases javafx.application.Application ngarkojem/nisim ekzekutimin e aplikacionit duke thirrur metoden start()
-
-//-->metoda printStackTrace() e klases Throwable,perdoret per te shfaqur perjashtimin si nje gjurme ne ndihme te identifikimit te vendodhjes se problemit
-
-//-->mtoda String.format() e klases String,perdoret per formatimin e nje vargu duket zevenendesuar vendet bosh me nje vlere te caktuar string
-
-//-->metoda getItems() e klases ObservableList ose ComboBox/ListView ne JavaFX.Funksioni:per te marre listen e elementeve te shtuar ne nje komponent UI si ComboBox ose ListView
-
-//-->metoda set() e klasat ObservableList,Property(si IntegerProperty, StringProperty, etj.),dhe komponent të tjere në JavaFX.
-//Funksioni:per te vendosur nje vlere te re per nje objekt,per azhurnimin e elementeve ne nje liste p.sh ListView
-
-//-->metoda clear() e klases List,Set,Map(si ArrayList, HashSet, etj.) dhe ObservableList ne JavaFX
-//Funksioni:per te hequr te gjitha elementet nga nje koleksion ose liste
-
-//-->metoda setText() e klases TextField,Label,TextArea,dhe komponentë te tjerë te UI në JavaFX
-//Finksioni:per te vendosur tekstin(string) ne nje komponent te UI (p.sh Label,TextField)
-
-//-->mtoda getText() e klases TextField etj,Finksioni:per te marre tekstin(string) aktual nga nje komponent te UI (p.sh TextField/Label)
-
-//-->metoda ObsevableList e klases javafx.collections.ObservableList.Funksioni:per te ruajtur nje list elementesh qe monitorohen per ndryshime 
-//p.sh si shtimi,heqja ose modifikimi i elementeve,dhe perdoret per te perditesuar automatikisht UI ne JavaFX
-
-//-->metoda observableArrayList() e klases javafx.collections.FXCollections.Funksioni:krijon nje ObservableList monitorohet per ndryshime,duke lejuar perditësimin automatik te UI ne JavaFX kur lista ndryshon 
-
-//-->metoda refresh() e klases TableView,ListView,ose komponente qe përdorin modele te te dhënave.Funksioni:per te rifreskuar permbajtjen e nje TableView ose ListView UI,pas nje ndryshimi ne te dhenat e tij
